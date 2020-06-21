@@ -43,6 +43,18 @@ Set the maximum password age to 180 days and the minimum password age to 3 days:
 
 # -----------------------------------------
 
+# create and delete a file 
+
+            $ touch fileName
+
+            $ rm fileName
+
+
+# create and delete a derectory
+
+      $ mkdir dirName
+
+      $ rm -r dirName
 
 
 # to see inside of a dir
@@ -178,6 +190,79 @@ $ !historyNumber
 $ echo $HISTFILESIZE
 
 
+
+
+- purpose of /etc/profile is to set up all default environment
+
+$ cat /etc/profile
+
+
+# list ALL the file in current directory with same extension 
+
+$ ls *.txt        (will show all files with .txt)
+
+
+# list ALL the files starting with same letters
+
+$ ls test*        (will show all files starting with test)
+
+
+
+# list ALL the files starting with specific letters
+
+$ ls [p]*         (will show all the files starting with p)
+
+
+# double quotes ("") evaluates the command and varibles within it, single ('') does not
+
+cloud_user@sorowar0073c:~$ echo "Curenntly logged on $LOGNAME"
+
+Curenntly logged on cloud_user
+
+cloud_user@sorowar0073c:~$ echo 'Curenntly logged on $LOGNAME'
+
+Curenntly logged on $LOGNAME
+
+
+
+# (\) backlash is a scape character
+
+cloud_user@sorowar0073c:~$ echo "Price is: $3.50"
+
+Price is: .50
+
+cloud_user@sorowar0073c:~$ echo "Price is: \$3.50"
+
+Price is: $3.50
+
+
+# (\) backlash is also extend commands
+
+$ ls \
+> -l
+total 36
+
+
+- ($) at prompt sign indicates regular user
+
+- (#)at prompt indicates root user
+
+
+# locate ALL the files has specific letters
+
+$ locate passwd         (will show all files have passwd)
+
+
+# find command more specific for file location
+
+cloud_user@sorowar0073c:~$ find .config -name '*.xml'      (.config ==dirName and .xml==extensionOfFile you looking for)
+
+
+# find where is the command file location
+
+cloud_user@sorowar0073c:~$ whereis ls
+
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
 
 
 
