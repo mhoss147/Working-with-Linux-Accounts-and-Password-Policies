@@ -155,6 +155,28 @@ $ cd    or    cd ~
 $ cd -
 
 
+# your ALL command history saved in hidden .bash_history
+
+$ ls -a
+
+$ cat .bash_history
+
+
+# see command history in .bash_history with line numbered
+
+$ history
+
+
+# re-run the command from history with 
+
+$ !historyNumber
+
+
+
+# how many lines of command to save in history
+
+$ echo $HISTFILESIZE
+
 
 
 
