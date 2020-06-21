@@ -105,6 +105,56 @@ cloud_user@sorowar0073c:~$ mv "fileNameYouWantToMove" "derectoryNameWhereYouWant
 
 
 
+# dislplay the name of the system kernel
+
+$ uname
+
+
+# kernel's release number
+
+$ uname -r
+
+
+# kernel's build date
+
+$ uname -v
+
+
+# name of the os
+
+$ uname -o
+
+
+# machine/processor type
+
+$ uname -m
+
+$ uname -p
+
+
+# everthing ALL together
+
+$ uname -a
+
+
+# current working directory
+
+$ pwd
+
+
+# go to home directory from any level
+
+$ cd    or    cd ~
+
+
+
+
+
+# go back to LAST directory
+
+$ cd -
+
+
 
 
 
